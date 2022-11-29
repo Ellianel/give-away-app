@@ -4,11 +4,9 @@ import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-      <BrowserRouter>
-          <Routes>
-
-          </Routes>
-      </BrowserRouter>
+          <div>
+              Hello
+          </div>
   );
 }
 
