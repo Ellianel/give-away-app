@@ -1,10 +1,13 @@
 import React from 'react';
+import HomeHeaderComponent from "./HomeHeader/Home-header-component";
+import HomeThreeColumns from "./HomeThreeColumns/Home-three-columns";
 
 const Home = () => {
     return (
-        <h2>
-            HOME
-        </h2>
+        <div className='page-wrapper'>
+            <HomeHeaderComponent />
+            <HomeThreeColumns />
+        </div>
     );
 };
 
