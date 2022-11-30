@@ -1,5 +1,6 @@
 @import './settings/fonts';
 @import './settings/colors';
+@import './home-component/home-header-styles.scss';
 
 * {
 	padding: 0;
@@ -14,55 +15,6 @@ body {
 	width: 1900px;
 	margin: 0 auto;
 	background-color: #fff;
-}
-.header-section {
-	display: flex;
-	justify-content: space-between;
-	margin-right: 142px;
-	position: relative;
-}
-.navigation-panel {
-	width: 680px;
-	height: 95px;
-	display: flex;
-	flex-direction: column;
-	margin-top: 40px;
-	gap: 20px;
-}
-.user-panel-list {
-	display: flex;
-	list-style: none;
-	gap: 20px;
-	justify-content: flex-end;
-}
-.navbar-list {
-	display: flex;
-	list-style: none;
-	justify-content: space-between;
-}
-.header-left{
-	width: 50%;
-	overflow: hidden;
-	direction: rtl;
-}
-.home-header {
-	width: 680px;
-	margin-top: 220px;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin-left: -130px;
-}
-.home-header-buttons {
-	margin-top: 65px;
-	display: flex;
-	justify-content: space-between;
-}
-.header-button {
-	width: 310px;
-	height: 120px;
-	background-color: #00000000;
-	font-size: 36px;
 }
 
 
