@@ -1,6 +1,7 @@
 @import './settings/fonts';
 @import './settings/colors';
 @import './home-component/home-header-styles.scss';
+@import './Home-three-columns-component/home-three-columns-style.scss';
 
 * {
 	padding: 0;
@@ -12,7 +13,7 @@ body {
 	font-family: $font-base;
 }
 .page-wrapper {
-	width: 1900px;
+	max-width: 1900px;
 	margin: 0 auto;
 	background-color: #fff;
 }
