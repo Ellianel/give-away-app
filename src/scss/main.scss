@@ -1,6 +1,10 @@
 @import './settings/fonts';
 @import './settings/colors';
-@import './home-component/home-header-styles.scss';
+@import '../components/Home/HomeHeader/home-header-styles.scss';
+@import '../components//Home/HomeThreeColumns/home-three-columns-styles.scss';
+@import '../components/Home/Home-4steps/home-4steps-styles.scss';
+@import '../components/Home/Home-about-us/about-us.styles.scss';
+
 
 * {
 	padding: 0;
@@ -12,7 +16,7 @@ body {
 	font-family: $font-base;
 }
 .page-wrapper {
-	width: 1900px;
+	max-width: 1900px;
 	margin: 0 auto;
 	background-color: #fff;
 }
