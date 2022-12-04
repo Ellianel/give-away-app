@@ -1,13 +1,35 @@
 .four-steps {
 	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	align-items: center;
 }
-
 .four-steps-article {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	width: 500px;
+}
+.deco {
+	width: 253px;
+	height: 33px;
+}
+.container-four-steps {
+	width: 100vw;
+	display: flex;
+	background-color: $grey;
+	justify-content: space-between;
+	padding-left: 150px;
+	padding-right: 150px;
+	font-size: 10px;
 }
 
 .container-icon {
-	flex-direction: row;
+	width: 165px;
+	height: 150px;
+	justify-content: space-between;
+	font-size: 10px;
 }
 .header-button {
 	width: 310px;

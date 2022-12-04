@@ -12,29 +12,29 @@ const HomeStepsComponent = () => {
 		<section className='four-steps'>
 			<article className='four-steps-article'>
 				<h2 id='steps'>Wystarczą 4 proste kroki</h2>
-				<img src={decoration} alt='decoration-line' />
+				<img className="deco" src={decoration} alt='decoration-line' />
 			</article>
-			<div className='container-icon'>
-				<div>
+			<div className="container-four-steps">
+				<div className='container-icon'>
 					<img src={icon1} alt='icon-wybierz_rzeczy' />
 					<h3>Wybierz rzeczy</h3>
 					<hr />
 					<h4>ubrania, zabawki, sprzęt i inne</h4>
 				</div>
 
-				<div>
+				<div className='container-icon'>
 					<img src={icon2} alt='icon-spakuj' />
 					<h3>Spakuj je</h3>
 					<hr />
 					<h4>skorzystaj z worków na śmieci</h4>
 				</div>
-				<div>
+				<div className='container-icon'>
 					<img src={icon3} alt='icon-komu_oddac' />
 					<h3>Zdecyduj komu chcesz oddać</h3>
 					<hr />
 					<h4>wybierz zaufane miejsce</h4>
 				</div>
-				<div>
+				<div className='container-icon'>
 					<img src={icon4} alt='icon-kurier' />
 					<h3>Zamów kuriera</h3>
 					<hr />
