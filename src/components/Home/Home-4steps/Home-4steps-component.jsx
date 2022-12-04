@@ -41,9 +41,12 @@ const HomeStepsComponent = () => {
 					<h4>kurier przyjedzie w dogodnym terminie</h4>
 				</div>
 			</div>
-			<button className='header-button'>
-				<Link to='/login'>ODDAJ RZECZY</Link>
-			</button>
+			<div className='four-steps-button-containter'>
+				<button className='header-button'>
+					<Link to='/login'>ODDAJ RZECZY</Link>
+				</button>
+			</div>
+
 		</section>
 	);
 };
