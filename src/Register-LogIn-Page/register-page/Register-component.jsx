@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import LoginRegisterNavigationPanel from '../Navigation Panel/LoginRegisternavigation-panel';
 import decoration from "../../assets/Decoration.svg";
 import FormRow from '../FormRow';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const initialState = {
     email: '',
@@ -12,6 +12,7 @@ const initialState = {
 
 const RegisterComponent = () => {
     const [values, setValues] = useState(initialState);
+    const navigate = useNavigate();
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
@@ -28,6 +29,9 @@ const RegisterComponent = () => {
             return;
         }
         console.log(values);
+        setTimeout(()=>{
+            navigate('/rejestracja');
+        }, 3000)
     }
 
     return (
@@ -39,7 +43,7 @@ const RegisterComponent = () => {
                 <div className="input-wrapper">
                 <FormRow type='email' name='email' values={values.email} handleChange={handleChange}/>
                 <FormRow type='password' name='password' labelText='hasło' values={values.password} handleChange={handleChange}/>
-                <FormRow type='password' name='password2' labelText='powtórz hasło' values={values.password} handleChange={handleChange}/>
+                <FormRow type='password' name='password2' labelText='powtórz hasło' values={values.password2} handleChange={handleChange}/>
                 </div>
                 <div className="login-register-btns">
                 <button className='login-btn'>
