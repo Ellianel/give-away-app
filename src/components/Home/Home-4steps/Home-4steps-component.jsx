@@ -9,9 +9,9 @@ import icon4 from "../../../assets/Icon4.svg";
 
 const HomeStepsComponent = () => {
 	return (
-		<section className='four-steps'>
+		<section className='four-steps' id='steps'>
 			<article className='four-steps-article'>
-				<h2 id='steps'>Wystarczą 4 proste kroki</h2>
+				<h2>Wystarczą 4 proste kroki</h2>
 				<img className="deco" src={decoration} alt='decoration-line' />
 			</article>
 			<div className="container-four-steps">

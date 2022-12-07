@@ -27,13 +27,18 @@ const HomeHeaderComponent = () => {
                     </div>
                     <nav className="navigation-bar">
                         <ul className="navbar-list">
-                            <li>Start</li>
                             <li>
-                                <LinkRoll to="steps" spy={true} smooth={true} offset={50} duration={1000}>
+                                Start</li>
+                            <li>
+                                <LinkRoll to="steps" spy={true} smooth={true} offset={10} duration={100}>
                                     O co chodzi?
                                 </LinkRoll>
                             </li>
-                            <li>O nas</li>
+                            <li>
+                                <LinkRoll to='about-us' spy={true} smooth={true} offset={1000} duration={100}>
+                                    O nas
+                                </LinkRoll>
+                            </li>
                             <li>Fundacja i organizacje</li>
                             <li>Kontakt</li>
                         </ul>

@@ -5,7 +5,7 @@ import signature from '../../../assets/Signature.svg'
 const AboutUs = () => {
 	return (
 		<>
-			<div className='about-us-container' id='about-us'>
+			<section className='about-us-container' id='about-us'>
 
 				<div className='about-us-info'>
 					<div className='about-us-title'>
@@ -25,7 +25,7 @@ const AboutUs = () => {
 				<span className='about-us-img'>
 
                 </span>
-			</div>
+			</section>
 		</>
 	)
 }
