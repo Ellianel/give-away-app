@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import LoginRegisterNavigationPanel from '../Navigation Panel/LoginRegisternavigation-panel';
 import decoration from "../../assets/Decoration.svg";
 import FormRow from '../FormRow';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const initialState = {
     email: '',
@@ -11,6 +11,7 @@ const initialState = {
 
 const LoginComponent = () => {
     const [values, setValues] = useState(initialState);
+    const navigate = useNavigate();
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
@@ -24,6 +25,9 @@ const LoginComponent = () => {
             return;
         }
         console.log(values);
+        setTimeout(()=>{
+            navigate('/logowanie');
+        }, 3000)
     }
 
     return (

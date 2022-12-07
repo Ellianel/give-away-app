@@ -23,7 +23,7 @@ const RegisterComponent = () => {
         if(!email || !password || !password2) {
             alert('Please fill Out All Fields');
             return;
-        } else if (password !== password2 || password.length <8 ) {
+        } else if (password !== password2 || password.length < 6 ) {
             alert('Passwords do not match or password is too short');
             return;
         }
