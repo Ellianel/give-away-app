@@ -26,7 +26,7 @@ const LoginComponent = () => {
         }
         console.log(values);
         setTimeout(()=>{
-            navigate('/logowanie');
+            navigate('/');
         }, 3000)
     }
 

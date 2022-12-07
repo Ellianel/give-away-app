@@ -30,7 +30,7 @@ const RegisterComponent = () => {
         }
         console.log(values);
         setTimeout(()=>{
-            navigate('/rejestracja');
+            navigate('/');
         }, 3000)
     }
 
