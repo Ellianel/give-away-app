@@ -6,7 +6,7 @@ import FormRow from "../../../Register-LogIn-Page/FormRow";
 const initialState = {
   name: "",
   email: "",
-  textValue:
+  placeholder:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 };
 
@@ -17,6 +17,10 @@ export const HomeContactComponent = () => {
     const value = e.target.value;
     setValues({ ...values, [name]: value });
   };
+  const onSubmit = (e) => {
+    e.preventDefault(e);
+    console.log(values);
+  }
   return (
     <section className="home-contact">
       <div className="overlay">
@@ -50,12 +54,12 @@ export const HomeContactComponent = () => {
                 value={values.textValue}
                 handleChange={handleChange}
               /> */}
-              <label for="textValue" class="form-label">
+              <label htmlFor="textValue" className="form-label">
                 Wpisz swoją wiadomość
               </label>
-              <textarea id="textValue" placeholder={values.textValue}></textarea>
+              <textarea id="textValue" placeholder={values.placeholder}></textarea>
             </div>
-            <button className="contact-btn">Wyślij</button>
+            <button className="contact-btn" onClick={onSubmit}>Wyślij</button>
           </form>
         </div>
       </div>
