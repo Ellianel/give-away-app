@@ -1,0 +1,13 @@
+.home-contact {
+	height: 1000px;
+	background-image: url("../../../assets/Background-Contact-Form.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.overlay {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.75);
+}

@@ -1,89 +1,88 @@
 .helping {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 20px;
+	margin-top: 40px;
 }
 .helping-title {
-  font: normal normal normal 38px/55px $font-base;
+	font: normal normal normal 38px/55px $font-base;
 }
 .whos-helping {
-  width: 750px;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	width: 750px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-  .active {
-    border: 0.75px solid #3c3c3c;
-    background-color: #fff;
-    padding: 23px 42px;
-  }
+	.active {
+		border: 0.75px solid #3c3c3c;
+		background-color: #fff;
+		padding: 23px 42px;
+	}
 }
 .whos-helping-btn {
-  background-color: #fff;
-  border: none;
-  font: normal normal normal 24px/24px $font-base;
-  color: #3c3c3c;
-  cursor: pointer;
+	background-color: #fff;
+	font: normal normal normal 24px/24px $font-base;
+	color: #3c3c3c;
+	cursor: pointer;
 }
 .helping-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  .active {
-    border: 0.75px solid #3c3c3c;
-    background-color: #fff;
-    padding: 5px 10px;
-  }
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	.active {
+		border: 0.75px solid #3c3c3c;
+		background-color: #fff;
+		padding: 5px 10px;
+	}
 }
 .helping-btn {
-  background-color: #fff;
-  border: none;
-  text-align: right;
-  font: normal normal normal 24px/24px $font-base;
-  color: #3c3c3c;
+	background-color: #fff;
+	border: none;
+	text-align: right;
+	font: normal normal normal 24px/24px $font-base;
+	color: #3c3c3c;
 }
 .helping-info {
-  width: 640px;
-  text-align: center;
-  font: normal normal normal 22px/30px Open Sans;
-  letter-spacing: 0px;
-  color: #3c3c3c;
-  opacity: 1;
-  margin: 25px 0;
+	width: 640px;
+	text-align: center;
+	font: normal normal normal 22px/30px Open Sans;
+	letter-spacing: 0px;
+	color: #3c3c3c;
+	opacity: 1;
+	margin: 25px 0;
 }
 .helping-list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  .helping-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  h3 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    text-align: left;
-    font: normal normal 300 26px/31px Merriweather;
-    letter-spacing: 0px;
-    color: #3c3c3c;
-    opacity: 1;
-    span {
-      text-align: left;
-      font: italic normal 300 18px/22px Merriweather;
-      letter-spacing: 0px;
-      color: #3c3c3c;
-    }
-  }
-  p {
-    text-align: left;
-    font: normal normal 300 18px/22px Merriweather;
-    letter-spacing: 0px;
-    color: #3c3c3c;
-    opacity: 1;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.helping-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	h3 {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		text-align: left;
+		font: normal normal 300 26px/31px Merriweather;
+		letter-spacing: 0px;
+		color: #3c3c3c;
+		opacity: 1;
+		span {
+			text-align: left;
+			font: italic normal 300 18px/22px Merriweather;
+			letter-spacing: 0px;
+			color: #3c3c3c;
+		}
+	}
+	p {
+		text-align: left;
+		font: normal normal 300 18px/22px Merriweather;
+		letter-spacing: 0px;
+		color: #3c3c3c;
+		opacity: 1;
+	}
 }

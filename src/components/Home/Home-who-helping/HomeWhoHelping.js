@@ -31,8 +31,8 @@ export const HomeWhoHelping = () => {
       <div className="whos-helping">
         {/* w zależności od stanu jaki aktualnie posiadamy nadaje klasy */}
         <div className={fundationState ? "whos-helping-btn active" : "whos-helping-btn"} onClick={fundationClickHandle}>Fundacjom</div>
-        <div className={organizationState ? "whos-helping-btn active" : "whos-helping-btn"} onClick={organizationClickHandle}>Organizacją pozarządowym</div>
-        <div className={collectionState ? "whos-helping-btn active" : "whos-helping-btn"} onClick={collectionClickHandle}>Lokalnym zbiórkom</div>
+        <div className={organizationState ? "whos-helping-btn active" : "whos-helping-btn"} onClick={organizationClickHandle}>Organizacjom<br/>pozarządowym</div>
+        <div className={collectionState ? "whos-helping-btn active" : "whos-helping-btn"} onClick={collectionClickHandle}>Lokalnym<br/>zbiórkom</div>
       </div>
       <article className="helping-info">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</article>
       <div className="helping-list-container">
