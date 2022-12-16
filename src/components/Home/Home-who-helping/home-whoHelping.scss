@@ -19,7 +19,6 @@
 	.active {
 		border: 0.75px solid #3c3c3c;
 		background-color: #fff;
-		padding: 23px 42px;
 	}
 }
 .whos-helping-btn {
@@ -27,6 +26,11 @@
 	font: normal normal normal 24px/24px $font-base;
 	color: #3c3c3c;
 	cursor: pointer;
+	height: 79px;
+	width: 208px;
+	display: grid;
+	place-items: center;
+
 }
 .helping-pagination {
 	display: flex;
@@ -55,6 +59,7 @@
 	margin: 25px 0;
 }
 .helping-list-container {
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;

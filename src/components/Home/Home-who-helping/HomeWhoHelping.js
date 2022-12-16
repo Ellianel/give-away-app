@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { HomeWhoHelpingListFundation } from "./Home-whoHelpingList-fundation";
+import { HomeWhoHelpingListOrganization } from "./HomeWhoHelpingListOrganization";
+import { HomeWhoHelpingListCollection } from "./HomeWhoHelpingListCollection";
 import decoration from "../../../assets/Decoration.svg";
 
 // ZAPYTAĆ GRZEGORZA jak wystylizować whos helping, zeby wszystko bylo na srodku
@@ -36,35 +39,9 @@ export const HomeWhoHelping = () => {
       </div>
       <article className="helping-info">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</article>
       <div className="helping-list-container">
-        <div className="helping-list">
-          <h3>
-            Fundacja "Dbam o Zdrowie"{" "}
-            <span>
-              Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji
-              życiowej.
-            </span>
-          </h3>
-          <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
-        </div>
-        <hr />
-        <div className="helping-list">
-          <h3>
-            Fundacja “Dla dzieci”{" "}
-            <span>Cel i misja: Pomoc dzieciom z ubogich rodzin.</span>
-          </h3>
-          <p>ubrania, meble, zabawki</p>
-        </div>
-        <hr />
-        <div className="helping-list">
-          <h3>
-            Fundacja “Bez domu”{" "}
-            <span>
-              Cel i misja: Pomoc dla osób nie posiadających miejsca
-              zamieszkania.
-            </span>
-          </h3>
-          <p>ubrania, jedzenie, ciepłe koce</p>
-        </div>
+        {fundationState && <HomeWhoHelpingListFundation />}
+        {organizationState && <HomeWhoHelpingListOrganization />}
+        {collectionState && <HomeWhoHelpingListCollection />}
         <div className="helping-pagination">
           <button className="helping-btn active">1</button>
           <button className="helping-btn">2</button>

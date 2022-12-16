@@ -6,8 +6,7 @@ import FormRow from "../../../Register-LogIn-Page/FormRow";
 const initialState = {
   name: "",
   email: "",
-  placeholder:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  message: "",
 };
 
 export const HomeContactComponent = () => {
@@ -17,10 +16,20 @@ export const HomeContactComponent = () => {
     const value = e.target.value;
     setValues({ ...values, [name]: value });
   };
+  const URL = 'https://fer-api.coderslab.pl/v1/portfolio/contact';
+  const postOption = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: values.name, email: values.email, message: values.message, })
+  }
   const onSubmit = (e) => {
     e.preventDefault(e);
     console.log(values);
-  }
+    fetch(URL, postOption)
+    console.log("Form sent!");
+    setValues(initialState);
+    console.log(values);
+  };
   return (
     <section className="home-contact">
       <div className="overlay">
@@ -33,7 +42,7 @@ export const HomeContactComponent = () => {
                 type="text"
                 name="name"
                 labelText="Wpisz swoje imię"
-                placeholder='Krzysztof'
+                placeholder={values.name ? "" : "Krzysztof"}
                 value={values.name}
                 handleChange={handleChange}
               />
@@ -41,25 +50,34 @@ export const HomeContactComponent = () => {
                 type="email"
                 name="email"
                 labelText="Wpisz swój email"
-                placeholder='abc@xyz.pl'
+                placeholder={values.email ? "" : "abc@xyz.pl"}
                 value={values.email}
                 handleChange={handleChange}
               />
             </div>
             <div className="contact-form-textarea">
-            {/* <FormRow
+              {/* <FormRow
                 type="textarea"
                 name="textValue"
                 labelText="Wpisz swoją wiadomość"
                 value={values.textValue}
                 handleChange={handleChange}
               /> */}
-              <label htmlFor="textValue" className="form-label">
+              <label htmlFor="message" className="form-label">
                 Wpisz swoją wiadomość
               </label>
-              <textarea id="textValue" placeholder={values.placeholder}></textarea>
+              <textarea
+                id="message"
+                type="text"
+                name="message"
+                placeholder={values.message ? "" : "Wpisz swoją wiadomość"}
+                value={values.textValue}
+                onChange={handleChange}
+              ></textarea>
             </div>
-            <button className="contact-btn" onClick={onSubmit}>Wyślij</button>
+            <button className="contact-btn" onClick={onSubmit}>
+              Wyślij
+            </button>
           </form>
         </div>
       </div>
