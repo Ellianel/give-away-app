@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import decoration from "../../../assets/Decoration.svg";
 import FormRow from "../../../Register-LogIn-Page/FormRow";
@@ -25,10 +26,10 @@ export const HomeContactComponent = () => {
   const onSubmit = (e) => {
     e.preventDefault(e);
     console.log(values);
-    fetch(URL, postOption)
-    console.log("Form sent!");
-    setValues(initialState);
-    console.log(values);
+    fetch(URL, postOption).then(()=>{
+      console.log("Form sent!");
+      setValues(initialState);
+    })
   };
   return (
     <section className="home-contact">
